@@ -51,16 +51,19 @@ The API will be at http://127.0.0.1:5000.
 
 ### Example cURL
 
-# Create an item  
-  curl -X POST -H "Content-Type: application/json"  
+# Create an item
+
+curl -X POST -H "Content-Type: application/json"  
     -d '{"name":"Widget","quantity":10}'  
     http://127.0.0.1:5000/inventory
 
-# List items  
-  curl http://127.0.0.1:5000/inventory
+# List items
 
-# Fetch by name  
-  curl "http://127.0.0.1:5000/inventory/fetch?name=Almond%20Milk"
+curl http://127.0.0.1:5000/inventory
+
+# Fetch by name
+
+curl "http://127.0.0.1:5000/inventory/fetch?name=Almond%20Milk"
 
 ## CLI Usage
 
@@ -84,6 +87,10 @@ The API will be at http://127.0.0.1:5000.
 
 - Fetch product (name):  
       python cli.py fetch --name "Almond Milk"
+
+## Sample Output
+
+![CLI Screenshot](images/sample-cli-output.png)
 
 ## Testing
 
